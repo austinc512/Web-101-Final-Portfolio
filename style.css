@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  background-image: linear-gradient(45deg, #3695fa, #882888);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  /* line-height: 1.2; */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+body {
+  /* background-image: linear-gradient(45deg, #3695fa, #882888); */
+  /* height: 115vh; */
+  /* overflow: hidden; */
+  /* font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin: 0;
+  color: rgb(248, 249, 250);
+}
+
+section {
+  text-align: justify;
+  margin: 10px 50px;
+}
+
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+
+/* NAV SECTION */
+nav {
+  background-color: rgb(33, 37, 41);
+  display: flex;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+li > a {
+  padding: 1em 1em;
+  text-decoration: none;
+  color: #3695fa;
+  transition: color 150ms;
+}
+li > a:hover {
+  color: rgb(4, 59, 179);
+
+  /* transform: translateY(-10px); */
+  transform: scale(1.2);
+}
+
+.content-1 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.profile-pic {
+  height: 200px;
+  border-radius: 25%;
+  display: inline-block;
+}
+
+.name {
+  font-size: 1.5em;
+}
+
+@media (min-width: 576px) {
+  nav {
+    justify-content: flex-end;
+  }
+}
+
+/* @media (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "main main main"
+      "one two three";
+  }
+  .one,
+  .two,
+  .three {
+    background-color: blue;
+  }
+  h1 {
+    font-size: 60px;
+  }
+} */
