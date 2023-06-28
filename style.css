@@ -1,3 +1,5 @@
+/* Global Styles */
+
 * {
   box-sizing: border-box;
 }
@@ -37,18 +39,6 @@ body {
   color: rgb(248, 249, 250);
 }
 
-section {
-  text-align: justify;
-  margin: 10px 50px;
-}
-
-#div1 {
-  width: 350px;
-  height: 70px;
-  padding: 10px;
-  border: 1px solid #aaaaaa;
-}
-
 /* NAV SECTION */
 nav {
   background-color: rgb(33, 37, 41);
@@ -69,47 +59,14 @@ li > a {
 }
 li > a:hover {
   color: rgb(4, 59, 179);
-
-  /* transform: translateY(-10px); */
   transform: scale(1.2);
 }
 
-.content-1 {
-  margin-top: 1rem;
-  text-align: center;
-}
+/* End of nav section  */
 
-.profile-pic {
-  height: 200px;
-  border-radius: 25%;
-  display: inline-block;
-}
-
-.name {
-  font-size: 1.5em;
-}
-
+/* nav adjusts at tablet breakpoint */
 @media (min-width: 576px) {
   nav {
     justify-content: flex-end;
   }
 }
-
-/* @media (min-width: 992px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "main main main"
-      "one two three";
-  }
-  .one,
-  .two,
-  .three {
-    background-color: blue;
-  }
-  h1 {
-    font-size: 60px;
-  }
-} */
