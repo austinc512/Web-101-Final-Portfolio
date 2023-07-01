@@ -79,6 +79,40 @@ li > a:hover {
 
 /* End of nav section  */
 
+/* pre-defining grid elements one through ten
+in global styles */
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  /* min-height: 222px; */
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.ten {
+  grid-area: ten;
+}
+
 /* nav adjusts at tablet breakpoint */
 @media (min-width: 576px) {
   nav {

@@ -86,6 +86,10 @@ section > h3 {
     transform: scale(1.2);
   } */
 
+/* I'm defining grid areas inside this
+  media query. These should transfer onto the next one,
+  but I'm leaving this note here in case they don't.   */
+
 @media (min-width: 576px) {
   .txst,
   .aca {
@@ -101,43 +105,22 @@ section > h3 {
   #three-p-1 {
     /* margin-bottom: 100px; */
   }
-  /* I'm defining grid areas inside this
-  media query. These should transfer onto the next one,
-  but I'm leaving this note here in case they don't.   */
-  .one {
-    grid-area: "one";
-  }
-  .two {
-    grid-area: "two";
-  }
-  .three {
-    min-height: 222px;
-    grid-area: "three";
-  }
-  .four {
-    grid-area: "four";
-  }
-  .five {
-    grid-area: "five";
-  }
-  .six {
-    grid-area: "six";
-  }
-  /* .section-grid {
+
+  .section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(7, 0.4fr);
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "galh1 galh1"
-      "gal1 gal2"
-      "gal3 gal4"
-      "gal5 gal6"
-      "gal7 gal8"
-      "gal9 gal10"
-      "gal11 gal12";
-    grid-gap: 50px;
-    margin-bottom: 50px;
-  } */
+      "one one"
+      "two three"
+      "two three"
+      "four three"
+      "four five"
+      "six five"
+      "six .";
+    /* grid-gap: 50px; */
+    /* margin-bottom: 50px; */
+  }
 }
 @media (min-width: 992px) {
   .three-p {
