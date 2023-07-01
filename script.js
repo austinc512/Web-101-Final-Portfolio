@@ -21,7 +21,7 @@
 //   }
 // });
 
-document.addEventListener("focus", function (event) {
+window.addEventListener("focus", function (event) {
   // console.log(
   //   document.querySelector(".clip").innerText,
   //   typeof document.querySelector(".clip").innerText
