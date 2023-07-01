@@ -1,4 +1,8 @@
-.content-1 {
+html {
+  height: 100vh;
+}
+
+.one {
   margin-top: 1rem;
   text-align: center;
 }
