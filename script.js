@@ -21,29 +21,34 @@
 //   }
 // });
 
-window.addEventListener("focus", function (event) {
-  // console.log(
-  //   document.querySelector(".clip").innerText,
-  //   typeof document.querySelector(".clip").innerText
-  // );
-  // // Code to run when the document comes into focus
-  // console.log("Document has come into focus");
-  // if (document.querySelector(".clip").innerText.length === 0) {
-  //   navigator.clipboard
-  //     .readText()
-  //     .then(
-  //       (clipText) =>
-  //         (document.querySelector(".clip").innerText += ` ${clipText}`)
-  //     );
-  // }
-  navigator.permissions.query({ name: "clipboard-read" }).then((result) => {
-    if (result.state === "granted" || result.state === "prompt") {
-      navigator.clipboard.readText().then((text) => {
-        document.querySelector(".clip").innerText += ` ${text}`;
-      });
-    }
+const readBtn = document.getElementById("readButton");
+
+document
+  .getElementById("readButton")
+  .addEventListener("click", function (event) {
+    // console.log(
+    //   document.querySelector(".clip").innerText,
+    //   typeof document.querySelector(".clip").innerText
+    // );
+    // // Code to run when the document comes into focus
+    // console.log("Document has come into focus");
+    // if (document.querySelector(".clip").innerText.length === 0) {
+    //   navigator.clipboard
+    //     .readText()
+    //     .then(
+    //       (clipText) =>
+    //         (document.querySelector(".clip").innerText += ` ${clipText}`)
+    //     );
+    // }
+    navigator.permissions.query({ name: "clipboard-read" }).then((result) => {
+      if (result.state === "granted" || result.state === "prompt") {
+        navigator.clipboard.readText().then((text) => {
+          document.querySelector(".clip").innerText += ` ${text}`;
+          console.log(`function block happening`);
+        });
+      }
+    });
   });
-});
 
 // console.log(navigator.clipboard);
 

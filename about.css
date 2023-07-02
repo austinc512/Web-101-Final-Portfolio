@@ -109,15 +109,13 @@ section > h3 {
   .section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.5fr 0.5fr 1fr 0.7fr;
     grid-template-areas:
       "one one"
       "two three"
-      "two three"
       "four three"
       "four five"
-      "six five"
-      "six .";
+      "six six";
     /* grid-gap: 50px; */
     /* margin-bottom: 50px; */
   }
