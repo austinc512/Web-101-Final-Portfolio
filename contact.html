@@ -8,7 +8,7 @@
       rel="icon"
       type="image/x-icon"
     />
-    <!-- <script src="script.js" defer></script> -->
+    <script src="contactScript.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="index.css" />
     <title>Contact Page</title>
@@ -35,7 +35,7 @@
         </li>
       </ul>
     </nav>
-    <div class="section-grid">
+    <section class="section-grid">
       <section class="one">
         <h1 class="text-light">Contact Me!</h1>
       </section>
@@ -51,25 +51,83 @@
         </p>
       </section>
       <section class="four">
-        <h4 class="nested-h4">
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API"
-            >Clipboard API:</a
-          >
-        </h4>
-        <p class="nested-p">
-          I don't have enough content for this page, and I also have the
-          opportunity to get extra credit by using some web APIs in this
-          project, so I will be adding them to this page. Click the button below
-          to add the contents of your clipboard!
-        </p>
-        <button class="general-button nested-button" id="readButton">
-          read clipboard
-        </button>
-        <p class="clip nested-clip">Contents:</p>
+        <form
+          action="results.html"
+          method="GET"
+          enctype="multipart/form-data"
+          class="form"
+        >
+          <div class="one">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="two">
+            <textarea
+              placeholder="Comments?"
+              maxlength="500"
+              minlength="20"
+              cols="20"
+              name="comments"
+              id="comments"
+            ></textarea>
+          </div>
+          <section class="three">
+            <label for="">How did you hear about me?</label>
+            <br />
+            <label for=""
+              ><input
+                type="checkbox"
+                name="How did you hear about me?"
+                value="Classmate"
+              />Classmate</label
+            >
+            <br />
+            <label for=""
+              ><input
+                type="checkbox"
+                name="How did you hear about me?"
+                value="Resume Submission"
+              />Resume Submission</label
+            >
+            <br />
+            <label for=""
+              ><input
+                type="checkbox"
+                name="How did you hear about me?"
+                value="LinkedIn"
+              />LinkedIn</label
+            >
+            <br />
+            <label for=""
+              ><input
+                type="checkbox"
+                name="How did you hear about me?"
+                value="Coding Academy Rec"
+              />Coding Academy Rec</label
+            >
+          </section>
+          <div class="four">
+            <label for="contacted">Do you want to be contacted?</label>
+            <br />
+            <input type="radio" id="yesPlz" name="contacted" value="Yes" />
+            <label for="contacted">Yes</label><br />
+            <input type="radio" id="noPlz" name="contacted" value="No" />
+            <label for="contacted">No</label><br />
+          </div>
+          <div class="five">
+            <label for="date"
+              >Add your birthday to receive a birthday wish!</label
+            >
+            <br />
+            <input type="date" name="date" id="date" min="1900-01-01" />
+          </div>
+          <div class="six">
+            <button type="submit" class="submit">Submit</button>
+          </div>
+        </form>
       </section>
       <!-- <section class="content-3">
-      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <section id="section1" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
 
       <img
         id="drag1"
@@ -78,6 +136,6 @@
         ondragstart="drag(event)"
       />
     </section> -->
-    </div>
+    </section>
   </body>
 </html>
