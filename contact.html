@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +8,10 @@
       rel="icon"
       type="image/x-icon"
     />
-    <script src="script.js" defer></script>
+    <!-- <script src="script.js" defer></script> -->
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="contact.css" />
-    <title>About Page</title>
+    <link rel="stylesheet" href="index.css" />
+    <title>Contact Page</title>
   </head>
   <body class="">
     <nav>
@@ -35,5 +35,49 @@
         </li>
       </ul>
     </nav>
+    <div class="section-grid">
+      <section class="one">
+        <h1 class="text-light">Contact Me!</h1>
+      </section>
+      <section class="two">
+        <img src="./cringe.jpeg" alt="profile picture" class="profile-pic" />
+      </section>
+      <section class="three">
+        <p>
+          I'm <span class="name">Austin Covey</span>, an aspiring software
+          developer currently enrolled in Austin Coding Academy's Full-Stack
+          JavaScript Bootcamp. This is my final project for the first module of
+          the course.
+        </p>
+      </section>
+      <section class="four">
+        <h4 class="nested-h4">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API"
+            >Clipboard API:</a
+          >
+        </h4>
+        <p class="nested-p">
+          I don't have enough content for this page, and I also have the
+          opportunity to get extra credit by using some web APIs in this
+          project, so I will be adding them to this page. Click the button below
+          to add the contents of your clipboard!
+        </p>
+        <button class="general-button nested-button" id="readButton">
+          read clipboard
+        </button>
+        <p class="clip nested-clip">Contents:</p>
+      </section>
+      <!-- <section class="content-3">
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+      <img
+        id="drag1"
+        src="./cringe.jpeg"
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+    </section> -->
+    </div>
   </body>
 </html>

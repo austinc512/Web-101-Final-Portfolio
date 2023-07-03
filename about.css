@@ -1,61 +1,10 @@
-/* html {
-  height: 200%;
-} */
-
 .content > h1 {
   margin-top: 1rem;
   text-align: center;
 }
 
-/* section {
-  margin: 1em;
-  padding: 1em;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-} */
-
-/* .one {
-  border: none;
-} */
-
 section > h3 {
   margin-left: 1.5em;
-}
-
-#contact-button {
-  /* align-items: center; */
-  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: rgb(248, 249, 250);
-  display: flex;
-  /* font-family: Phantomsans, sans-serif; */
-  font-size: 1.3rem;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 15px 14px;
-  /* text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap; */
-  cursor: pointer;
-  margin: 5px 0 0 5px;
-  transition: margin 400ms;
-  transition: background-image 400ms;
-}
-
-#contact-button:hover {
-  margin: 0 0 0 0;
-  background-image: linear-gradient(144deg, #000000, #140387 50%, #69d8e0);
 }
 
 .txst {
@@ -74,21 +23,6 @@ section > h3 {
   border: 0;
   border-radius: 10px;
 }
-
-/* li > a {
-    padding: 1em 1em;
-    text-decoration: none;
-    color: #3695fa;
-    transition: color 150ms;
-  }
-  li > a:hover {
-    color: rgb(4, 59, 179);
-    transform: scale(1.2);
-  } */
-
-/* I'm defining grid areas inside this
-  media query. These should transfer onto the next one,
-  but I'm leaving this note here in case they don't.   */
 
 @media (min-width: 576px) {
   .txst,
@@ -122,7 +56,20 @@ section > h3 {
 }
 @media (min-width: 992px) {
   .three-p {
-    color: blue;
+    /* color: blue; */
     /* margin-left: 150px; */
+  }
+  .section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "one one one"
+      "two three four"
+      "five five four"
+      "six six .";
+
+    /* grid-gap: 50px; */
+    /* margin-bottom: 50px; */
   }
 }

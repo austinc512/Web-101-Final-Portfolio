@@ -1,4 +1,67 @@
-/* @media (min-width: 576px) {
+.profile-pic {
+  height: 200px;
+  border-radius: 25%;
+  /* display: inline-block; */
+  /* margin: 0 auto;
+    text-align: center; */
+}
+
+.two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section > ul {
+  display: block;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+section > p {
+  /* margin: 0; */
+  margin-left: 5px;
+}
+
+/* ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+  li > a {
+    padding: 1em 1em;
+    text-decoration: none;
+    color: #3695fa;
+    transition: color 150ms;
+  } */
+
+@media (min-width: 576px) {
+  .section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1.1fr 0.5fr 1fr 1fr;
+    grid-template-areas:
+      "one one"
+      "two three"
+      "four five"
+      "six five"
+      "seven seven";
+    /* grid-gap: 50px; */
+    /* margin-bottom: 50px; */
+  }
 }
 @media (min-width: 992px) {
-} */
+  .section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.1fr 0.5fr 1fr;
+    grid-template-areas:
+      "one one one"
+      "two four three"
+      "seven five five"
+      "six five five";
+    /* grid-gap: 20px; */
+    /* grid-gap: 50px; */
+    /* margin-bottom: 50px; */
+  }
+}

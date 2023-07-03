@@ -23,32 +23,31 @@
 
 const readBtn = document.getElementById("readButton");
 
-document
-  .getElementById("readButton")
-  .addEventListener("click", function (event) {
-    // console.log(
-    //   document.querySelector(".clip").innerText,
-    //   typeof document.querySelector(".clip").innerText
-    // );
-    // // Code to run when the document comes into focus
-    // console.log("Document has come into focus");
-    // if (document.querySelector(".clip").innerText.length === 0) {
-    //   navigator.clipboard
-    //     .readText()
-    //     .then(
-    //       (clipText) =>
-    //         (document.querySelector(".clip").innerText += ` ${clipText}`)
-    //     );
-    // }
-    navigator.permissions.query({ name: "clipboard-read" }).then((result) => {
-      if (result.state === "granted" || result.state === "prompt") {
-        navigator.clipboard.readText().then((text) => {
-          document.querySelector(".clip").innerText += ` ${text}`;
-          console.log(`function block happening`);
-        });
-      }
-    });
+readBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  // console.log(
+  //   document.querySelector(".clip").innerText,
+  //   typeof document.querySelector(".clip").innerText
+  // );
+  // // Code to run when the document comes into focus
+  // console.log("Document has come into focus");
+  // if (document.querySelector(".clip").innerText.length === 0) {
+  //   navigator.clipboard
+  //     .readText()
+  //     .then(
+  //       (clipText) =>
+  //         (document.querySelector(".clip").innerText += ` ${clipText}`)
+  //     );
+  // }
+  navigator.permissions.query({ name: "clipboard-read" }).then((result) => {
+    if (result.state === "granted" || result.state === "prompt") {
+      navigator.clipboard.readText().then((text) => {
+        document.querySelector(".clip").innerText = `Contents: ${text}`;
+        console.log(`function block happening`);
+      });
+    }
   });
+});
 
 // console.log(navigator.clipboard);
 
@@ -193,6 +192,30 @@ we're going to iterate over
 at the end, there will be a sum 9
 
 there will be some overflow in each iteration.
+
+
+
+
+*/
+
+/*
+
+
+```javascript
+  const myArr = [ 1, 2, 3]
+
+  sumOfPoweredByTwo(myArr) // --> 14
+```
+
+const array1 = [1, 4, 9, 16];
+
+make each one a power of 2
+
+
+
+sum that array
+
+
 
 
 
