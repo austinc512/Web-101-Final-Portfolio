@@ -1,4 +1,33 @@
-/* @media (min-width: 576px) {
+html {
+  min-height: 100vh;
+}
+
+/* .one {
+  text-align: left;
+} */
+
+@media (min-width: 576px) {
+  html {
+    min-width: 621px;
+  }
+  .section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1.3fr;
+    grid-template-areas:
+      "one one"
+      "two three"
+      ". three";
+  }
 }
 @media (min-width: 992px) {
-} */
+  .section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 0.5fr;
+    grid-template-areas:
+      "one three three"
+      "two three three"
+      ". three three";
+  }
+}

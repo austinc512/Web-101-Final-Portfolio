@@ -10,7 +10,8 @@
     />
     <script src="contactScript.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link rel="stylesheet" href="./contact.css" />
     <title>Contact Page</title>
   </head>
   <body class="">
@@ -40,38 +41,41 @@
         <h1 class="text-light">Contact Me!</h1>
       </section>
       <section class="two">
-        <img src="./cringe.jpeg" alt="profile picture" class="profile-pic" />
-      </section>
-      <section class="three">
+        <h3>Contact Information</h3>
         <p>
-          I'm <span class="name">Austin Covey</span>, an aspiring software
-          developer currently enrolled in Austin Coding Academy's Full-Stack
-          JavaScript Bootcamp. This is my final project for the first module of
-          the course.
+          If you'd like to get in touch with me, please feel free to reach out
+          directly!
+        </p>
+        <p>
+          Email: cello.austin1994@gmail.com
+          <br />
+          Discord: kidcovey
         </p>
       </section>
-      <section class="four">
+      <section class="three">
         <form
           action="results.html"
           method="GET"
           enctype="multipart/form-data"
           class="form"
         >
-          <div class="one">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required />
-          </div>
-          <div class="two">
-            <textarea
-              placeholder="Comments?"
-              maxlength="500"
-              minlength="20"
-              cols="20"
-              name="comments"
-              id="comments"
-            ></textarea>
-          </div>
-          <section class="three">
+          <section>
+            <div class="one1">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="two2">
+              <textarea
+                placeholder="Comments?"
+                maxlength="500"
+                minlength="20"
+                cols="20"
+                name="comments"
+                id="comments"
+              ></textarea>
+            </div>
+          </section>
+          <section class="three3">
             <label for="">How did you hear about me?</label>
             <br />
             <label for=""
@@ -106,36 +110,28 @@
               />Coding Academy Rec</label
             >
           </section>
-          <div class="four">
-            <label for="contacted">Do you want to be contacted?</label>
-            <br />
-            <input type="radio" id="yesPlz" name="contacted" value="Yes" />
-            <label for="contacted">Yes</label><br />
-            <input type="radio" id="noPlz" name="contacted" value="No" />
-            <label for="contacted">No</label><br />
-          </div>
-          <div class="five">
-            <label for="date"
-              >Add your birthday to receive a birthday wish!</label
-            >
-            <br />
-            <input type="date" name="date" id="date" min="1900-01-01" />
-          </div>
-          <div class="six">
-            <button type="submit" class="submit">Submit</button>
-          </div>
+          <section>
+            <div class="four4">
+              <label for="contacted">Do you want to be contacted?</label>
+              <br />
+              <input type="radio" id="yesPlz" name="contacted" value="Yes" />
+              <label for="contacted">Yes</label><br />
+              <input type="radio" id="noPlz" name="contacted" value="No" />
+              <label for="contacted">No</label><br />
+            </div>
+            <div class="five5">
+              <label for="date"
+                >Add your birthday to receive a birthday wish!</label
+              >
+              <br />
+              <input type="date" name="date" id="date" min="1900-01-01" />
+            </div>
+            <div class="six6">
+              <button type="submit" class="submit">Submit</button>
+            </div>
+          </section>
         </form>
       </section>
-      <!-- <section class="content-3">
-      <section id="section1" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
-
-      <img
-        id="drag1"
-        src="./cringe.jpeg"
-        draggable="true"
-        ondragstart="drag(event)"
-      />
-    </section> -->
     </section>
   </body>
 </html>
